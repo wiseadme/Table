@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="seacrh-wrap">
+                <form action="" class="search-form">
+                    <label for="search" class="search-form__label">Search:&nbsp;</label>
+                    <input id="search" type="text" class="search-form__input" placeholder="input value">
+                    <button class="search-form__btn">Search</button>
+                </form>
+            </div>
+            <div class="table-wrap">
+                <table class="table">
+                    <thead class="table__head-wrap">
+                        <tr class="table__head-row">
+                            <th class="table__head-name unsorted" data-type="name" data-sort="false">Name</th>
+                            <th class="table__head-name unsorted" data-type="position" data-sort="false">Position</th>
+                            <th class="table__head-name unsorted" data-type="office" data-sort="false">Office</th>
+                            <th class="table__head-name unsorted" data-type="age" data-sort="false">Age</th>
+                            <th class="table__head-name unsorted" data-type="start date" data-sort="false">Start date</th>
+                            <th class="table__head-name unsorted" data-type="salary" data-sort="false">Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body-wrap"></tbody>
+                </table>
+                <div class="pagination-wrap">
+                    <div class="pagination">
+                        <div class="pagination__prev" data-btn="prev">Preview</div>
+                        <div class="pagination__nums-wrap"></div>
+                        <div class="pagination__next" data-btn="next">Next</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

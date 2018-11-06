@@ -1,0 +1,255 @@
+@import "https://fonts.googleapis.com/css?family=Noto+Sans";
+@import "./css/reset.css";
+
+/**
+ * 
+ */
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.search-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.search-form__label {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 7px;
+}
+
+.search-form__input {
+    border-radius: 3px;
+    border-color: #acacac60;
+    width: 250px;
+    height: 25px;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+.search-form__input::placeholder {
+    color: #e6dada;
+    font-style: italic;
+}
+
+.search-form__btn {
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: rgb(57, 145, 245);
+}
+
+.table-wrap {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table__head-wrap {
+    display: block;
+    border-bottom: 2px solid black;
+}
+
+.table__head-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.table__head-name {
+    display: block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+
+.table__head-name:hover {
+    cursor: pointer;
+}
+
+.table__head-name:nth-child(1) {
+    width: 15%;
+}
+
+.table__head-name:nth-child(2) {
+    width: 30%;
+}
+
+.table__head-name:nth-child(3) {
+    width: 15%;
+}
+
+.table__head-name:nth-child(4) {
+    width: 10%;
+}
+
+.table__head-name:nth-child(5) {
+    width: 15%;
+}
+
+.table__head-name:nth-child(6) {
+    width: 15%;
+}
+
+.table__head-name::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 25.5px;
+    right: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgb(33, 122, 255);
+}
+
+.table__body-wrap {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+}
+
+.table__body-row {
+    display: flex;
+    width: 100%;
+}
+
+.table__body-row:nth-child(odd) {
+    background-color: rgb(245, 239, 239);
+}
+
+.table__body-item {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.table__body-item:nth-child(1) {
+    width: 15%;
+}
+
+.table__body-item:nth-child(2) {
+    width: 30%;
+}
+
+.table__body-item:nth-child(3) {
+    width: 15%;
+}
+
+.table__body-item:nth-child(4) {
+    width: 10%;
+}
+
+.table__body-item:nth-child(5) {
+    width: 15%;
+}
+
+.table__body-item:nth-child(6) {
+    width: 15%;
+}
+
+
+/*pagination*/
+
+.pagination-wrap {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.pagination {
+    float: right;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    clear: both;
+}
+
+.pagination__nums-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__num {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.pagination__num:hover {
+    cursor: pointer;
+}
+
+.this-page {
+    border: 2px solid #acacac;
+    border-radius: 3px;
+    background: linear-gradient(to top, #88888870, #ffffff);
+}
+
+.pagination__prev,
+.pagination__next {
+    width: 100px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.active {
+    background-color: rgba(248, 244, 244, 0.8);
+}
+
+.unsorted::before,
+.unsorted::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+}
+
+.unsorted::before {
+    top: 14.5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid rgb(214, 210, 210);
+}
+
+.unsorted::after {
+    top: 25.5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgb(214, 210, 210);
+}

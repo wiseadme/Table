@@ -1,0 +1,17 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["airbnb-base", "eslint:recommended", "prettier"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "allowIndentationTabs": true,
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", 4]
+    }
+}
